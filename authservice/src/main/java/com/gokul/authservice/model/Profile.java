@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.tomcat.jni.Address;
+
 
 import java.util.Date;
 import java.util.Set;
@@ -17,7 +17,7 @@ import java.util.Set;
 public class Profile {
 
 
-    private String displayNAme;
+    private String displayName;
     private String profilePictureUrl;
     private Date birthday;
     private Set<Address> addresses;

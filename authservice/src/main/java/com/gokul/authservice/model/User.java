@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.context.annotation.Profile;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -15,6 +14,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.time.Instant;
+import java.util.Set;
 
 @Data
 @Builder
@@ -68,4 +68,6 @@ public class User {
 
     private boolean active;
     private Profile userProfile;
+
+    private Set<Role> roles;
 }
